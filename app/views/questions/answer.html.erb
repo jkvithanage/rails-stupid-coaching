@@ -1,3 +1,14 @@
-<h1>Stupid Coaching</h1>
-<p><%= params[:question] %></p>
-<p><%= @answer %></p>
+<div class="container col-6 mt-3">
+  <h1>Stupid Coaching</h1>
+  <div class="question">
+    <p><%= params[:question] %></p>
+    <p>-You</p>
+  </div>
+  <div class="answer mt-3">
+    <p><%= @answer %></p>
+    <p>-Your coach</p>
+  </div>
+  <div class="ask_new mt-3">
+    <%= link_to "Ask a new question", "/ask" %>
+  </div>
+</div>
